@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/logoo.ico">
+  <link rel="stylesheet" href="index.css" />
+  <!-- <link rel ="script" src ="index.js"/> -->
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <link rel="script" href="scroll.js" />
+  <title>Developer Portfolio</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Poppins&display=swap");
+  </style>
+</head>
+<!-- <h1>Developer</h1> -->
+
+<body class="full">
+  <header>
+    <nav>
+      <div class="left">Srivathsav's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="javascript: scrolltoId()">About</a></li>
+          <li><a href="javascript: scrolltoIdP()">Projects</a></li>
+          <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+          <li><a href="javascript: scrolltoIdC()">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi ,I'm <span>Srivathsav</span> &
+        I'm a passionate
+        <span id="element"></span>
+      </div>
+      <div class="rightSection">
+        <img src="images/pngwing.com.png" />
+      </div>
+    </section>
+
+
+    <section class="secondSection">
+      <div class="TTT">
+        <p id="about"><br><br><br>Who am I ?</p>
+        <p id="summary">
+          As a motivated and ambitious Computer Science student, I am deeply passionate about pushing the boundaries of
+          programming. I thrive on proactive problem-solving and have a strong drive for excellence, constantly seeking
+          new opportunities to learn and make a meaningful impact within a dynamic team.
+        </p>
+        <br>
+        <div class="wrapper">
+          <div class="container">
+            <h2>Skills</h2>
+
+            <div class="skills">
+
+              <div class="details">
+                <span>C/C++</span>
+                <span>90%</span>
+              </div>
+              <div class="bar">
+                <div id="c-bar"></div>
+              </div>
+              <br>
+              <div class="details">
+                <span>Python</span>
+                <span>65%</span>
+              </div>
+
+              <div class="bar">
+                <div id="python-bar"></div>
+              </div>
+              <br>
+
+              <div class="details">
+                <span>HTML</span>
+                <span>75%</span>
+              </div>
+              <div class="bar">
+                <div id="html-bar"></div>
+              </div>
+              <br>
+
+              <div class="details">
+                <span>CSS</span>
+                <span>70%</span>
+              </div>
+              <div class="bar">
+                <div id="css-bar"></div>
+              </div>
+              <br>
+              <div class="details">
+                <span>Javascript</span>
+                <span>65%</span>
+              </div>
+              <div class="bar">
+                <div id="js-bar"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="ThirdSection">
+      <h1 id="projects">Projects</h1>
+
+      <div class="enclose">
+        <div class="card">
+          <img src="images/githublogo.png" alt="Project Image">
+          <div class="card-content">
+            <div class="links">
+              <a href="https://github.com/srxvathsav/Face-Recognition-Project" target="_blank">Attendance Tracker</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/githublogo.png" alt="Project Image">
+          <div class="card-content">
+            <div class="links">
+              <a href="https://github.com/srxvathsav/food-delivery" target="_blank">Online Food delivery</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/githublogo.png" alt="Project Image">
+          <div class="card-content">
+            <div class="links">
+              <a href="https://github.com/srxvathsav/Bus-Ticket-Reservation-RPA" target="_blank">Bus Ticket
+                Reservstion</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-me">
+      <br>
+      <h2 style="text-align:center;">Contact me</h2>
+      <ul id="contact-section">
+        <li>
+          <a href="tel:7806831118"><img id="img-link" src="images/phone.png"> </a>
+        </li>
+        <li>
+          <a href="mailto:sreevathsav2002@gmail.com"><img id="img-link" src="images/gmail.png"></a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/srivathsav26/"><img id="img-link" src="images/in.png"></a>
+        </li>
+        <li>
+          <a href="https://github.com/srxvathsav"><img id="img-link"
+              src="images/github-g04ad51b9b_1280-removebg-preview.png"></a>
+        </li>
+        <li>
+          <a href="https://leetcode.com/srxvathsav/"><img id="img-link"
+              src="https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png"></a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+
+  <!-- Javascript code -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+
+    var typed = new Typed('#element', {
+      strings: ['CS Student !', 'Web-Developer !', 'Problem Solver !'],
+      typeSpeed: 50,
+    });
+
+    function scrolltoId() {
+      var access = document.getElementById('about');
+      access.scrollIntoView({ behavior: 'smooth' }, true);
+    }
+
+    var section = document.getElementById('about');
+
+    function scrolltoIdP() {
+      var access = document.getElementById('projects');
+      access.scrollIntoView({ behavior: 'smooth' }, true);
+    }
+
+    var sectionp = document.getElementById('projects');
+
+    function scrolltoIdC() {
+      var access = document.getElementById('contact-section');
+      access.scrollIntoView({ behavior: 'smooth' }, true);
+    }
+    var sectionc = document.getElementById('contact-section');
+
+    function isInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function handleScroll() {
+      if (isInViewport(section)) {
+        section.classList.add('visible');
+      } else {
+        section.classList.remove('visible');
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+
+  </script>
+
+</body>
+
+</html>
